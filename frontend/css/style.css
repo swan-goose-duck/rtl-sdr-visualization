@@ -1,0 +1,59 @@
+body { margin: 0; overflow: hidden; background: #111}
+
+#line-chart-container {
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    width: 100vw;
+    background: #111;
+}
+
+#waterfall-container {
+    position: absolute;
+    top: 50vh;
+    left: 2vw;
+    height: 50vh;
+    width: 96vw;
+}
+
+#controls {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    z-index: 100;
+}
+
+button {
+    padding: 8px 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #666;
+}
+
+.connected { background: #0c0; }
+.disconnected { background: #c00; }
+
+.setting-group label {
+    margin-right: 5px;
+}
+.setting-group input,
+.setting-group select {
+    width: 120px;
+    padding: 3px;
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 3px;
+}
